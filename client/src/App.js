@@ -2,6 +2,8 @@ import React from 'react';
 import './App.css';
 import User from './components/user';
 import MaterialUI from './components/Material-UI';
+import TextBox from './components/TextBox';
+import Tabs from './components/Tabs';
 import Typography from '@material-ui/core/Typography';
 function App() {
   return (
@@ -15,6 +17,8 @@ function App() {
       <User />
       <h1>Material UI Components</h1>
       <MaterialUI />
+      {/* <TextBox /> */}
+      <Tabs />
     </div>
   );
 }
