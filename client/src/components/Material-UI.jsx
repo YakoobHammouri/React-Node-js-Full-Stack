@@ -80,6 +80,10 @@ const useStyles = (theme) => ({
     width: theme.spacing(7),
     height: theme.spacing(7),
   },
+  customFabStyle: {
+    backgroundColor: theme.palette.colors.menuHeader,
+    '&:hover': { backgroundColor: theme.palette.colors.menuHeader },
+  },
 });
 
 const useStyles2 = makeStyles((theme) => ({
@@ -276,12 +280,12 @@ class MaterialUI extends Component {
           </Button>
         </div>
         <div className="marg-div">
-          <Button variant="outlined" color="primary">
+          <Button variant="outlined" color="secondary">
             Primary
           </Button>
         </div>
         <div className="marg-div">
-          <Button variant="contained" color="primary" startIcon={<Delete />}>
+          <Button variant="contained" color="secondary" startIcon={<Delete />}>
             Delete
           </Button>
         </div>
@@ -337,6 +341,19 @@ class MaterialUI extends Component {
           <Fab color="secondary" aria-label="edit">
             <Edit />
           </Fab>
+        </div>
+        <div className="marg-div fab">
+          <Fab color="defualt" aria-label="add"></Fab>
+          <Fab color="primary" aria-label="add"></Fab>
+          <Fab color="secondary" aria-label="edit"></Fab>
+          {/* <Fab color="secondary" aria-label="edit"></Fab> */}
+          {/* <Fab
+            classes={{ root: classes.customFabStyle }}
+            severity="success"
+            aria-label="edit"
+          >
+            +
+          </Fab> */}
         </div>
 
         <section className="text-box">

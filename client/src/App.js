@@ -19,7 +19,7 @@ function App() {
         <User />
         <h1>Material UI Components</h1>
         <MaterialUI />
-        {/* <TextBox /> */}
+        <TextBox />
         <Tabs />
       </MiniDrawer>
     </div>
